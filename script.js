@@ -11,11 +11,13 @@ function searchCity(event) {
     
     var nameOfCity = cityText.value.trim();
     
-
     if (nameOfCity) {
         saveCity();
         findCity(nameOfCity);
         console.log(nameOfCity);
+        reset();
+    } else {
+        alert("enter a city name")
     }
 }
 
